@@ -1,0 +1,5 @@
+^ Usé ColorHunt para la paleta de colores
+
+^ Agregué Bootstrap para la navbar, iconos y demás
+
+^ Con JS hice un navbar con flex

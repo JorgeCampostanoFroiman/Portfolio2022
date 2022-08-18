@@ -5,6 +5,14 @@ Paleta de colores
 #EAE3D2
 #F9F5EB */
 
+:root {
+    --primer-color: #2c77ca;
+    --segundo-color: #607EAA;
+    --tercer-color: #EAE3D2;
+    --cuarto-color: #F9F5EB;
+  }
+
+
 /* Navbar */
 
 *, *:before, *:after{
@@ -17,13 +25,13 @@ head {
    /* font-family: ; */
 }
 .menu{
-    background-color:  #2c77ca ;
+    background-color: var(--primer-color) ;
     height: 75px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #EAE3D2;
+    border-bottom: 1px solid var(--tercer-color);
     box-shadow: 5px 0 10px ;
 }
 .logo{
@@ -52,7 +60,7 @@ head {
     font-size: 18px;
     display: block;
     text-transform: uppercase;
-    color: #EAE3D2;
+    color: var(--tercer-color);
 }
 .menu_items li:hover, li.active {
     background-color: rgba(0,0,0,.3);
@@ -61,7 +69,7 @@ head {
 .btn_menu{
     margin-right:30px;
     font-size: 25px;
-    color: #EAE3D2;
+    color: var(--tercer-color);
     cursor: pointer;
     display: none;
 }
@@ -88,7 +96,7 @@ ul.show{
         position: fixed;
         width: 100vw;
         height: calc(100%-65px);
-        background: #607EAA;
+        background: var(--segundo-color);
         top: -100vw;
         text-align:  center;
         transition: all .4s;
@@ -103,7 +111,7 @@ ul.show{
     }
     .menu_items li a{
         font-size: 20px;
-        color:#EAE3D2;
+        color: var(--tercer-color);
         font-weight: bold;
     }
     .menu_items li a:hover{
@@ -125,7 +133,7 @@ ul.show{
 }
 
 body{
-    background-color: #607EAA;
+    background-color: var(--segundo-color);
 }
 
 /* Home */
@@ -137,10 +145,65 @@ body{
 }
 
 #home .contenedor{
-    position: absolute;
-    top: 80%;
-    left: 90%;
-    transform: translateX(-80%) translateY(-50%);
-    color: #fff;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+.contenedor figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5); 
+    cursor:pointer;
+}
+.contenedor figure img{
+    width:100%;
+    height:100%;
+    transition: all 500ms ease-out;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(11,103,123,0.6);
+    transition: all 500ms ease-out;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover > .capa h2{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.contenedor figure .capa h2{
+    color: var(--tercer-color);
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.contenedor figure .capa p{
+    color: var(--tercer-color);
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+
+
+
 

@@ -21,9 +21,6 @@ Paleta de colores
     outline: 0;
     box-sizing: border-box;
 }
-head {
-   /* font-family: ; */
-}
 .menu{
     background-color: var(--primer-color) ;
     height: 75px;

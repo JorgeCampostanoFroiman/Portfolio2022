@@ -14,6 +14,16 @@
     outline: 0;
     box-sizing: border-box;
 }
+.section-title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size:50px;
+}
+.texto-pagina{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 .menu{
     background-color: var(--primer-color);
     height: 75px;
@@ -23,6 +33,7 @@
     align-items: center;
     border-bottom: 1px solid var(--tercer-color);
     box-shadow: 5px 0 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .logo{
     color: #EAE3D2;
@@ -253,7 +264,11 @@ body{
 }
 
 /* Bio */
-
+#bio{
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: auto;
+}
 #bio .contenedor{
     background-color: var(--tercer-color);
     height: 100vh;
@@ -262,47 +277,57 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-#bio .contenedor .fotobio{
-    position: relative;
-    height: 400px;
-    width: 500px;
-    overflow: hidden;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.5); 
-    cursor:pointer;
-}
-#bio .contenedor .textobio{
-    position: relative;
-    overflow: hidden;
-    width: 500px;
-    margin-top: 10px;
     text-align: center;
 }
 
 
+#bio .contenedor .desc{
+    width: 80%  ;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: var(--segundo-color) 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 /* Portfolio */
 
 #portfolio .contenedor{
-    background-color: var(--segundo-color);
+    margin:auto;
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 100%;
+    flex-direction: column;
+    background-color: var(--segundo-color);
 }
 
 /* Skills */
 
 #skills .contenedor{
-    background-color: var(--tercer-color);
-    height: 100vh;
     width: 100%;
-    text-align: center;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--tercer-color);
+    text-align: center;
 }
 #skills h2{
     margin-top: 30px;
     margin-bottom: 20px;
 }
 #skills p{
-    margin-bottom: 20px;
+    position: relative;
+    font-style: italic;
+    overflow: hidden;
+    width: 1000px;
+    margin: 10px 0 10px 0;
+    text-align: center;
 }
 #skills ul{
     display: grid;
@@ -311,8 +336,7 @@ body{
     list-style: none;
     grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
     grid-column:auto ;
-    text-align: center;
-    align-items: center;    
+    text-align: center;  
     margin: auto;
     row-gap: 20px;
     column-gap: 100px;
@@ -321,12 +345,50 @@ body{
     height: 100px;
     width: 100px;
 }
+#skills img:hover {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    overflow:hidden;
+}
+
 
 
 /* contact */
 
 #contact .contenedor{
-    background-color: var(--segundo-color);
+    width: 60%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 100vh;
-    width: 100%;
+    flex-direction: column;
+    background-color: var(--segundo-color);
+}
+#contact h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#contact ul{
+    display: grid;
+    width: 400Px;
+    height: 400px;
+    list-style: none;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-column:auto ;
+    text-align: center;  
+    margin: auto;
+    row-gap: 20px;
+    column-gap: 100px;
+}
+#contact img{
+    height: 100px;
+    width: 100px;
+}
+#contact span{
+    margin: 10px 0;
+}
+#contact img:hover {
+    filter: opacity(.6);
 }

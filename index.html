@@ -15,11 +15,11 @@
     <nav class="menu">
         <label class="logo">JC</label>
         <ul class="menu_items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Bio</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href=#home>Home</a></li>
+            <li><a href=#portfolio>Portfolio</a></li>
+            <li><a href=#bio>Bio</a></li>
+            <li><a href=#skills>Skills</a></li>
+            <li><a href=#contact>Contact</a></li>
         </ul>
     <span class="btn_menu">
         <i class="bi bi-text-right"></i>
@@ -32,6 +32,7 @@
 
     <section id="home">
         <div class="contenedor">
+            <h2 class="section-title">#HOME</h2>
             <figure>
                 <img id="imghome" src="https://i.ibb.co/ZT7BHmW/1.jpg"></img>
                 <div class="capa">
@@ -44,7 +45,7 @@
                     <div class="icono">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
-                          </svg>
+                        </svg>
                     </div>
                     <span>Continuar!</span>
                 </button>
@@ -56,39 +57,59 @@
         
     <section id="bio">
         <div class="contenedor">
-            <div class="fotobio">
-                <img src="https://i.ibb.co/P4dtBzb/20220619-180006.jpg">
-            </div>
-            <div class="textobio">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ullam reiciendis natus non suscipit amet enim maiores fugit facere voluptates velit, ratione itaque aut quam rerum dolorem, magnam autem! Molestias?</p>
+            <h2 class="section-title">#BIO</h2>
+            <div class="desc">
+                <img id="imgbio" src="./resources/TR.png">
+                <div class="texto">
+                    <p>Me llamo Jorge Campostano, tengo 27 años y soy de Buenos Aires, Argentina. Hace 2 años comencé a estudiar Programación en la UTN. Hoy estoy buscando un primer trabajo en el rubro, aprendí de Programación orientada a objetos en la facultad, y mucho de lógica y back-end. Luego aprendí de web por mi cuenta. En mis tiempos libros me gusta leer, hacer deportes -de preferencia en equipo-, escribir o los juegos de estrategia. Me encanta viajar y conocer nuevos lugares, además de aprender cosas.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="portfolio">
         <div class="contenedor">
-
+            <h2 class="section-title">#PORTFOLIO</h2>
         </div>
     </section>
 
     <section id="skills">
         <div class="contenedor">
-            <h2>#SKILLS</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <h2 class="section-title">#SKILLS</h2>
+            <p>Tengo conocimientos en varios lenguajes: C++, C#, Python, web con Html, CSS y "algo" de Javascript. En base de datos, uso Sql Server o MySql. Aprendí fundamentos de lógica, estadistica y programación orientada a objetos. Hoy estoy cursando la carrera de Licenciado en Sistemas en UBA, a dos materias de terminar la tecnicatura en UTN.</p>
             <ul>
-                <li><img src="./icons/asp.net.png" alt="html5" class="item__icon"></li>
-                <li><img src="./icons/c++.png" alt="html5" class="item__icon"></li>
-                <li><img src="./icons/mysql.png" alt="html5" class="item__icon"></li>
-                <li><img src="./icons/oop.png" alt="html5" class="item__icon"></li>
-                <li><img src="./icons/python.png" alt="html5" class="item__icon"></li>
-                <li><img src="./icons/web.png" alt="html5" class="item__icon"></li>
+                <li><img src="./resources/asp.net.png" alt="html5" class="item__icon"></li>
+                <li><img src="./resources/c++.png" alt="html5" class="item__icon"></li>
+                <li><img src="./resources/mysql.png" alt="html5" class="item__icon"></li>
+                <li><img src="./resources/oop.png" alt="html5" class="item__icon"></li>
+                <li><img src="./resources/python.png" alt="html5" class="item__icon"></li>
+                <li><img src="./resources/web.png" alt="html5" class="item__icon"></li>
             </ul>
         </div>
     </section>
 
     <section id="contact">
         <div class="contenedor">
-
+            <h2 class="section-title">#CONTACT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat dolorem iste. Dicta libero iusto quia velit officiis maxime, laborum perspiciatis quos optio quidem amet, cum error explicabo voluptatem illo.</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/jorge-campostano-froiman-167623160/"><img src="./resources/linkedin.png" alt="html5" class="item__icon"></a>
+                    <span class="texto-pagina">Linkedin</span>
+                </li>
+                <li>
+                    <a href="https://github.com/JorgeCampostanoFroiman"><img src="./resources/github.png" alt="html5" class="item__icon"></a>                    
+                    <span class="texto-pagina">Github</span>
+                </li>
+                <li>
+                    <a href="mailto:j.campostano@gmail.com?Subject=Hey!%20Vengo%20del%20Portfolio"><img src="./resources/gmail.png" alt="html5" class="item__icon"></a>
+                    <span class="texto-pagina">Gmail</span>
+                </li>
+                <li>
+                    <a href="./resources/CurriculumPdf.pdf"><img src="./resources/cv.png" alt="html5" class="item__icon"></a>
+                    <span class="texto-pagina">Curriculum</span>
+                </li>
+            </ul>
         </div>
     </section>
 

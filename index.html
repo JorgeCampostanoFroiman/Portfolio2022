@@ -70,11 +70,11 @@
         <div class="contenedor">
             <h2 class="section-title">#PORTFOLIO</h2>
             <div class="container">
-                <video src="./resources/Platos.mp4" class="slider" autoplay muted></video>
+                <video controls src="./resources/Platos.mp4" class="slider" autoplay muted></video>
                 <ul>
-                    <li onclick="videoslider('./resources/Platos.mp4')"><video src="./resources/Platos.mp4"></video></li>
-                    <li onclick="videoslider('./resources/Informes.mp4')"><video src="./resources/Informes.mp4"></video></li>
-                    <li onclick="videoslider('./resources/Ventas.mp4')"><video src="./resources/Ventas.mp4"></video></li>
+                    <li onclick="videoslider('./resources/Platos.mp4')"><video src="./resources/Platos.mp4"></video><button type="button" class="btn btn-outline-success">Proyecto1 con explicacion corta</button></li>
+                    <li onclick="videoslider('./resources/Informes.mp4')"><video src="./resources/Informes.mp4"></video><button type="button" class="btn btn-outline-success">Proyecto2 con explicacion corta</button></li>
+                    <li onclick="videoslider('./resources/Ventas.mp4')"><video src="./resources/Ventas.mp4"></video><button type="button" class="btn btn-outline-success">Proyecto3 con explicacion corta</button></li>
                 </ul>
             </div>
         </div>
@@ -122,12 +122,5 @@
     </section>
 
     
-    <script>
-
-        function videoslider(links){
-            document.querySelector(".slider").src = links;
-        }
-
-    </script>
 </body>
 </html>

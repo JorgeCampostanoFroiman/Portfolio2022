@@ -70,8 +70,17 @@
     <section id="portfolio">
         <div class="contenedor">
             <h2 class="section-title">#PORTFOLIO</h2>
+            <div class="container">
+                <video src="./resources/Platos.mp4" class="slider" autoplay muted></video>
+                <ul>
+                    <li onclick="videoslider('./resources/Platos.mp4')"><video src="./resources/Platos.mp4"></video></li>
+                    <li onclick="videoslider('./resources/Informes.mp4')"><video src="./resources/Informes.mp4"></video></li>
+                    <li onclick="videoslider('./resources/Ventas.mp4')"><video src="./resources/Ventas.mp4"></video></li>
+                </ul>
+            </div>
         </div>
     </section>
+
 
     <section id="skills">
         <div class="contenedor">
@@ -91,7 +100,7 @@
     <section id="contact">
         <div class="contenedor">
             <h2 class="section-title">#CONTACT</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat dolorem iste. Dicta libero iusto quia velit officiis maxime, laborum perspiciatis quos optio quidem amet, cum error explicabo voluptatem illo.</p>
+            
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/jorge-campostano-froiman-167623160/"><img src="./resources/linkedin.png" alt="html5" class="item__icon"></a>
@@ -114,5 +123,12 @@
     </section>
 
     
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
 </body>
 </html>

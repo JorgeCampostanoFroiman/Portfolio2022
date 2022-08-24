@@ -304,6 +304,57 @@ body{
     flex-direction: column;
     background-color: var(--segundo-color);
 }
+#portfolio h2{
+    margin: 15px 0 15px 0;
+}
+#portfolio h5{
+    color: black;
+}
+#portfolio .contenedor .container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .contenedor .container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#portfolio .contenedor .container ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+#portfolio .contenedor .container ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+#portfolio .contenedor .container ul li video{
+    width: 200px;
+    transition: all 0.3s;
+}
+#portfolio .contenedor .container ul li video:hover{
+    transform: scale(1.1);
+}
+
+
 
 /* Skills */
 

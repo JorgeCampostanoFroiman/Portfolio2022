@@ -333,7 +333,7 @@ body{
         width: 200px;
     }
     #bio .texto{
-        font-size: small;
+        font-size: x-small;
     }
 }
 @media screen and (max-width:380px) {

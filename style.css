@@ -6,6 +6,8 @@
   }
 
 
+
+
 /* Navbar */
 
 *, *:before, *:after{
@@ -96,13 +98,17 @@ ul.show{
     }
     .menu_items{
         position: fixed;
-        width: 100vw;
+        width: 40vw;
         height: calc(100%-65px);
-        background: var(--segundo-color);
+        background: var(--primer-color);
         top: -100vw;
-        text-align:  center;
+        margin-left: 59vw;
+        text-align: center;
         transition: all .4s;
         flex-direction: column;
+        padding-left: 0rem;
+        border: 1px solid var(--tercer-color);
+        box-shadow: 5px 0 10px;
     }
     .menu_items li{
         margin: 30px 0 0 0;
@@ -117,6 +123,8 @@ ul.show{
         font-weight: bold;  
     }
     .menu_items li a:hover{
+        background-color: #EAE3D2;
+        transition: background-color .5s;
         color:#1C3879;
     }
     .logo{
@@ -138,6 +146,7 @@ ul.show{
         width: 100%;
     }
 }
+
 body{
     background-color: var(--segundo-color);
 }
@@ -346,14 +355,16 @@ body{
 
 #portfolio .contenedor{
     margin:auto;
-    width: 60%;
+    width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    text-align: center;
     background-color: var(--segundo-color);
 }
+
 #portfolio h2{
     margin: 15px 0 15px 0;
 }
